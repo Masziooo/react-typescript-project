@@ -1,0 +1,29 @@
+article {
+  padding: 0 138px;
+  margin-bottom: 50px;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 467px 500px;
+
+  &__text {
+    & > * {
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      line-height: 64px;
+      font-weight: 700;
+      font-size: 48px;
+      strong {
+        color: #29cc6a;
+      }
+    }
+
+    p {
+      max-width: 367px;
+      color: #2b2d26;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.blocks {
+  h2 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  &--wrapper {
+    display: flex;
+    gap: 100px;
+  }
+}

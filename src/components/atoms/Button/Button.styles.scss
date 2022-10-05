@@ -1,0 +1,32 @@
+.button {
+  padding: 8px 50px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+
+  &--primary {
+    background: #02cc67;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid #02cc67;
+
+    &:hover {
+      background: none;
+      border: 2px solid #02cc67;
+      color: #02cc67;
+    }
+  }
+
+  &--secondary {
+    border: 2px solid #fff;
+    background: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      border: 2px solid #fff;
+      background: #fff;
+      color: #02cc67;
+    }
+  }
+}

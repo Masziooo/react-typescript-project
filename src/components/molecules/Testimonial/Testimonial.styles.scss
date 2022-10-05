@@ -1,0 +1,22 @@
+.testimonial {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  margin-bottom: 100px;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 10px solid #29cc6a;
+
+    h2 {
+      max-width: 244px;
+      padding-left: 40px;
+      color: #29cc6a;
+    }
+  }
+
+  &__quote {
+    margin-left: 80px;
+  }
+}

@@ -1,0 +1,48 @@
+$transition-method: cubic-bezier(0, 1, 0, 1);
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid #2b2d26;
+  cursor: pointer;
+
+  h3 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+  &__hidden-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 2s * 2 $transition-method;
+  }
+
+  &__description {
+    width: 100%;
+  }
+
+  &__button {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--open {
+    .accordion {
+      &__hidden-content {
+        height: auto;
+        max-height: 9999px;
+        transition: max-height 2s * 10 ease;
+        padding-bottom: 32px;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  height: 103px;
+  padding: 0 138px;
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    a {
+      color: #787a7c;
+      text-decoration: none;
+    }
+
+    &__logo {
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 34px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+
+      a {
+        &::after {
+          display: block;
+          content: "";
+          border-bottom: solid 3px #02cc67;
+          transform: scaleX(0);
+          transition: transform 250ms ease-in-out;
+          transform-origin: 0% 50%;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+}
