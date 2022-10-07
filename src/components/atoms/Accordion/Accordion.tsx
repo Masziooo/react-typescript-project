@@ -1,16 +1,16 @@
-import React, { FC, useState } from "react";
+import React, { useState } from "react";
 import classNames from "classnames";
 import { toggleState } from "../../hooks/toggleState";
 import { AccordionProps } from "./Accordion.models";
 import PlusIcon from "../PlusIcon/PlusIcon";
 import "./Accordion.styles.scss";
 
-const Accordion: FC<AccordionProps> = ({
+const Accordion = ({
   num,
   visibleContent,
   hiddenContent,
   className,
-}) => {
+}: AccordionProps) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const accordionClasses = classNames("accordion", className, {
